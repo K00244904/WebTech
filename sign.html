@@ -1,0 +1,176 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Martins Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon/favicon-96x96.png">
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+    
+    
+
+<body id="loginLanding">
+   <main class="wrapper">
+		<header id="logo">
+		   <h2></h2>
+	   </header>
+		<section id="sign">
+			<header>
+                <div class="logo">
+                <img src="logo/logo_size.jpg"  alt="Logo">
+                </div>
+				<h1>Become a Member of ChefMartins Kitchen</h1>
+			</header>
+			<article id="loginForm">
+				<form action="ind.html" method="post" name="form1" id="form1" onSubmit="return validateForm();">
+                    
+                    <label for="name">Name:</label>
+					  <input name="name" type="text"  id="name" placeholder="Example: Uche Martins">
+                        
+					 <label for="address">Address:</label>
+					<input name="address" id="address" placeholder="Example: 29 Oakland Drive" required >
+                    
+                    <label for="mobile">Mobile:</label>
+					  <input name="mobile"  id="mobile" placeholder="Example: 0899256745">
+                    
+                    <label for="email1">Email:</label>
+					  <input name="email1"  id="email1" placeholder="Example: ezege@gmail.com">
+                    
+                    <label for="email2">Retype your Email:</label>
+					  <input name="email2"  id="email2">
+
+					<label for="password"><i class="fas fa-lock"></i> Password</label>
+					<div id="pwdWrap">
+						<input type="password" id="password" name="password" required>
+						<i class="fas fa-eye eyeIcon"></i>
+					</div>
+
+					<div>
+						<button type="submit" id="submit">Register <i class="fas fa-angle-right"></i></button>
+                        
+                         <a href="index.html">
+            <img src="button_cancel.png" id="center" alt="cancel"></a> 
+					</div>
+                    
+                  
+ 
+
+          
+          
+           
+
+					
+				</form>
+			</article>
+		</section>
+   </main>
+    
+    <script>
+
+        
+        
+		function validateEmail(elementValue){
+			var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; 
+			return emailPattern.test(elementValue);
+		}
+		function isNumeric(numericValue){
+			var numberPattern=/^[0-9]+$/;
+			return numberPattern.test(numericValue);
+		}
+		function validateName(nameValue){
+			var namePattern=/^[a-zA-Z ""]+$/;
+			return namePattern.test(nameValue);
+		}
+		function validatePhone(phoneNumber){
+			var phonePattern=/^(087|086|085|089)+[0-9]{7}$/;
+			return phonePattern.test(phoneNumber);
+		}
+		function validateForm(){
+			
+			var nameVal=document.getElementById("name").value;
+			if(nameVal==null || nameVal=="")
+				{
+					alert("Name must be filled out");
+					return false;
+				}
+			if(!validateName(nameVal))
+				{
+					alert("Name should contain only letters");
+					return false;
+				}
+			
+
+			var emailVal=document.getElementById("email1").value;
+			var email2Val=document.getElementById("email2").value;
+			if(emailVal==null || emailVal=="")
+				{
+					alert("Enter your Email address");
+					return false;
+				}
+			
+			if(!validateEmail(emailVal))
+				{
+					alert("Enter a Valid Email address ");
+					return false;
+				}
+			 if(emailVal!=email2Val)
+				{
+					alert("Email Address Does Not Match");
+					return false;
+				}
+			var phoneNumber=document.getElementById("mobile").value;
+			if(phoneNumber==null || phoneNumber=="")
+				{
+					alert("Enter a Mobile number");
+					return false;
+				}
+			if(!validatePhone(phoneNumber))
+				{
+					alert("Enter a Valid Irish Mobile Number");
+					return false;
+				}
+			
+			
+		}
+        
+        
+        
+        
+        const visToggle = document.querySelector('.eyeIcon');
+
+        const input = document.querySelector('#pwdWrap input');
+        
+        var password = true;
+        
+       visToggle.addEventListener('click', function(){
+                 if(password) {
+                     input.setAttribute('type','text'); // using js dynamically changed the type attribute
+                     visToggle.classList.remove('fa-eye');
+                     visToggle.classList.add('fa-eye-slash');
+                 } else {
+                     input.setAttribute('type','password');
+                     visToggle.classList.remove('fa-eye-slash');
+                     visToggle.classList.add('fa-eye');
+                 }
+            password = !password;
+              });
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+

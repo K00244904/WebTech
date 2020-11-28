@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+}
+
+.six, .rightnav{display: none;}
+
+.oop, .gho, .move{margin-top: 80px;}
+
+.make {margin-top: 100px;}
+
+
+#side, #hide, #left{width: 50%;}
+
+.oop h3, .gho h3, .move h3{margin-top: 1px;}
+
+
+
+.oop p, .gho p, .move p{margin-top: -20px;}
+
+
+
+
+
+#searchfield {
+                background: white;
+                border: solid 1px #999;
+                border-radius: 3px;
+
+                padding: 4px 5px 4px 5px;
+                width: 15em;
+                transition: all .3s;
+            }
+
+            #searchfield:focus {
+                width: 20em;
+                background-color: #fff;
+                border-color: black;
+
+               
+            }
+
+.red{color: darkolivegreen;}
+
+h3{color: cadetblue;}
+h2{color: darkblue;}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.rece p, .receip p, .recei p, .receipe p{margin-top: -5px; font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+    margin-top: -45px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+    text-transform: uppercase; 
+    font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif";
+}
+
+.blue{margin-top: 50px;}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#slide{width: 100%;}
+
+.copyright, .site, .signUp, #main_image, li, .hid, .first, .second, .third, .four, .five{display: none;}
+
+.dis{border: 1px solid green; background-color: oldlace;}
+
+.dis a{text-decoration: none; color: brown;}
+
+.footerdiv a{text-decoration: none; color: black; font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif"; text-transform: uppercase; }
+.blue{color: midnightblue;}
+
+.footerdiv {margin-top: 280px; background-color: darkgrey;}
+
+.bord {border: 5px solid green; margin-top: 250px; background-color: darksalmon;}
+
+
+h1 { font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";}
+
+#slime, #slick, #sli{margin-top: 100px; width: 100%;}
+
+.skuki h4, .cooking h4, .cooki h4 {font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif"; text-transform: uppercase; margin-top: 1px; color: firebrick;}
+
+
+
+#signature, #receipe, #full, #afro, #blog, #doon{width: 90%; margin-top: 70px;}
+
+h5{font-size: 1.2em;  font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif"; color: firebrick; margin-top: 1px;}
+
+ .dobby p, .nigerian p, .belle p, .Afrolems p, .foodblog p, .dooney p{padding: 12px; margin-top: -40px; font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif";} 
+
+.cooking p, .skuki p, .cooki p{padding: 12px; margin-top: -30px; font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif";}
+
+#clock {display: none;}
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .grid-container {
+         display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        background-color: aliceblue;
+    }
+    
+   .footerdiv, .topnav{display: none;}
+    
+    
+    
+   .copyright, .site, .signUp, .rightnav, #clock, .hid, .first, .second, .third, .four, #main_image{display: block;}
+    
+    #clock {                        /* Styles apply to element with id="clock" */
+  font-size: 20px;;   /* Use a big bold font */
+  background-color: white;             /* on a light bluish-gray background. */
+               /* Surround it with some space */
+     /* and a solid black border */
+ 
+    width: 150px;    
+        height: 40px;
+        grid-column: 1/2;
+        margin-top: -70px;
+        
+}
+    
+   
+
+    .logo {grid-column: 3/4; }
+    
+    .rightnav {grid-column: 1/6; background-color: darkgray; border: 15px solid darkgray;}
+    
+    .rightnav a{color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+    text-transform: uppercase; 
+    font-family: Constantia,  Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";}
+    
+    .rightnav .act {color: green;}
+    .rightnav a:hover{color: blue;}
+    
+       #searchfield{margin-top: 20px;}
+    
+    .opps, .gho{display: none;}
+    
+     .move{grid-column: 1/1;}
+    .make {grid-column: 1/1; margin-top: -250px;}
+    
+    .mane{grid-column: 5/6; margin-top: -250px;}
+    .oop{grid-column: 5/6; margin-top: -280px;}
+    
+    #slideshow{grid-column: 2/4; margin-top: -300px;} 
+    
+    #main_image {width: 150%;}
+    
+    h3{color: firebrick;}
+    
+    .main p, .make p, .oop p, .move p{padding: 11px; font-size: 17px;}
+    
+    .hid {grid-column: 1/6;
+    font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif"; text-transform: uppercase; margin-top: 1px; color: firebrick;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+   #seem, #fac, #che, #chic, #akam{width: 95%;}
+    .first{grid-column: 1/2;}
+    .second{grid-column: 2/3;}
+    .third{grid-column: 3/4;}
+    .four{grid-column: 4/5;}
+    .six{grid-column: 5/6;}
+    
+     .goe {grid-column: 1/1;
+    font-family: Constantia, "Lucida Bright", "Dejavu Serif", Georgia, "serif"; text-transform: uppercase; margin-top: 12px; color: firebrick;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+    .boss{grid-column: 1/3;}
+    
+    .dis{grid-column: 4/6;}
+    
+    #slide{width: 140%;}
+    
+    .boss p{padding: 11px; font-size: 17px;}
+    
+    .red{margin-top: 70px;}
+    
+    
+    .copyright {grid-column: 1/2; background-color: darkslategrey; margin-top: 180px; }
+    .site {grid-column: 2/4; background-color: darkslategrey; margin-top: 180px;}
+    .signUp{grid-column: 4/6; background-color: darkslategrey; margin-top: 180px;}
+    
+    .site a, .copyright a{text-decoration: none; color: white;}
+    .dark{color: black;}
+    
+    .six {display: block;}
+    
+     .site a:hover, .copyright a:hover{color: orchid;}
+    
+    #slime, #slick, #sli{width: 100%; height: 50%;}
+   
+    .cooki{grid-column: 1/3;}
+    .cooking{grid-column: 4/6;}
+    .skuki{grid-column: 2/5;}
+    
+    .skuki p, .cooking p, .cooki p{border: 1px solid white; text-align: center;
+    background-color: white;
+    color: black;}
+
+    
+    .dooney{grid-column: 1/3;}
+ 
+    .Afrolems{grid-column: 1/3;}
+    
+     
+    .nigerian{grid-column: 1/3;}
+    .dobby{grid-column: 4/6;}
+       .foodblog{grid-column: 4/6;}
+     .belle{grid-column: 4/6;}
+    
+    #signature, #receipe, #full, #afro, #blog, #doon{width: 100%; height: 50%;}
+    
+    .dobby p, .nigerian p, .belle p, .Afrolems p, .foodblog p, .dooney p{border: 1px solid white; text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    }
+    
+    .bord{grid-column: 1/6; margin-top: 140px;}
+    
+}
